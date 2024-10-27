@@ -1,0 +1,34 @@
+{
+  "name": "go-rental-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon --exec ts-node app.ts",
+    "seeder": "tsc seeder/seeder.ts --outDir .temp && node .temp/seeder/seeder.js && rm -rf .temp",
+    "format": "prettier --write ."
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "nodemon": "^3.1.7",
+    "prettier": "^3.3.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
+  },
+  "dependencies": {
+    "@apollo/server": "^4.11.0",
+    "@apollo/server-plugin-landing-page-graphql-playground": "^4.0.1",
+    "@go-rental/shared": "file:../shared",
+    "@graphql-tools/schema": "^10.0.7",
+    "apollo-server-core": "^3.13.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "graphql-tag": "^2.12.6",
+    "mongoose": "^8.7.2",
+    "shared": "file:../shared"
+  }
+}

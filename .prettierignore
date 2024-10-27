@@ -1,0 +1,21 @@
+# Ignore all node_modules
+node_modules
+
+# Ignore build output
+build
+dist
+out
+
+# Ignore specific files
+.next
+coverage
+*.min.js
+
+# Ignore specific directories
+src/vendor
+public/assets
+
+# Ignore specific file types
+*.svg
+*.png
+*.jpg
